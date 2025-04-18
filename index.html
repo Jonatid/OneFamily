@@ -158,8 +158,8 @@
       <div class="menu-toggle">
         <span class="nav-icon">☰</span>
         <div class="menu-dropdown">
-          <a href="#">Category 1</a>
-          <a href="#">Category 2</a>
+          <a href="categorypage.html">Shop by Category</a>
+          <a href="ProductPage.html">Product View</a>
           <a href="#">Category 3</a>
           <a href="#">Category 4</a>
           <a href="#">Category 5</a>
@@ -259,5 +259,24 @@
     </div>
   </footer>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle .nav-icon");
+    const menuDropdown = document.querySelector(".menu-dropdown");
+
+    menuToggle.addEventListener("click", function (e) {
+      e.stopPropagation();
+      menuDropdown.style.display = menuDropdown.style.display === "block" ? "none" : "block";
+    });
+
+    document.addEventListener("click", function () {
+      menuDropdown.style.display = "none";
+    });
+
+    menuDropdown.addEventListener("click", function (e) {
+      e.stopPropagation(); // Allow clicking inside the dropdown
+    });
+  });
+</script>
 </body>
 </html>
