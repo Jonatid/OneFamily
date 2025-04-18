@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detail – One Family Marketplace</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      color: #111;
+      background-color: #fff;
+    }
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 60px;
+      gap: 60px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .product-image {
+      flex: 1 1 50%;
+      text-align: center;
+    }
+    .product-image img {
+      width: 100%;
+      max-width: 500px;
+      object-fit: contain;
+    }
+    .product-details {
+      flex: 1 1 40%;
+    }
+    .product-title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .product-price {
+      font-size: 1.5rem;
+      color: #b12704;
+      margin-bottom: 20px;
+    }
+    .color-options {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .color-swatch {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 2px solid #ccc;
+      cursor: pointer;
+    }
+    .btn {
+      padding: 15px 30px;
+      background: black;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    .secondary-btn {
+      background: white;
+      color: black;
+      border: 1px solid black;
+    }
+    .section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 60px 60px;
+    }
+    .description, .accordion {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    details {
+      margin-bottom: 10px;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .manufacturer-info {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-container">
+    <div class="product-image">
+      <img src="https://via.placeholder.com/700x800.png?text=Full+Product+Image" alt="Full Product Image" style="width: 100%; height: auto; object-fit: contain;">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Product Name</div>
+      <div class="product-price">$3,500.00</div>
+      <div class="color-options">
+        <div class="color-swatch" style="background-color: black;"></div>
+        <div class="color-swatch" style="background-color: brown;"></div>
+        <div class="color-swatch" style="background-color: beige;"></div>
+      </div>
+      <button class="btn">Place in Cart</button><br>
+      
+      <div class="description">
+        <p>Introducing the Product Name, an understated design that exemplifies quality craftsmanship and mission-driven design. This item is made from premium materials and built to last.</p>
+        <a href="#">Read more</a>
+      </div>
+      <div class="accordion">
+        <details>
+          <summary>Sustainability</summary>
+          <p>Made with ethically sourced materials in a low-waste production process.</p>
+        </details>
+        <details>
+          <summary>Product Care</summary>
+          <p>Wipe with a clean, dry cloth. Avoid exposure to moisture and heat.</p>
+        </details>
+        <details>
+          <summary>In-Store Service</summary>
+          <p>Visit any location for assistance, maintenance, or returns.</p>
+        </details>
+        <details>
+          <summary>Delivery & Returns</summary>
+          <p>Standard shipping is complimentary. Returns accepted within 30 days.</p>
+        </details>
+        <details>
+          <summary>Gifting</summary>
+          <p>Comes with complimentary gift packaging.</p>
+        </details>
+        <details>
+          <summary>Manufacturer Philanthropic Endeavors</summary>
+          <p>Brand Co. donates 5% of profits to community education programs and supports disaster relief initiatives globally.</p>
+        </details>
+      </div>
+      <div class="manufacturer-info">
+        <strong>Manufacturer:</strong> Brand Co.<br>
+        <strong>Overview:</strong> Known for artisan craftsmanship and innovation.<br>
+        <strong>Mission:</strong> Empowering families through quality and design.
+      </div>
+    </div>
+  </div>
+</body>
+</html>

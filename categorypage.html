@@ -1,0 +1,225 @@
+<!-- PRODUCT GRID PAGE WITH HERO + 4x6 GRID + IMAGE + FOOTER -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Category – One Family Marketplace</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #111;
+    }
+    .hero {
+      height: 300px;
+      background: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: #333;
+      text-align: center;
+    }
+    .section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+    .product-card {
+      background: #f9f9f9;
+      border: 1px solid #e0e0e0;
+      text-align: center;
+      padding: 20px;
+      transition: box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .product-card:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+    .product-card h4 {
+      font-size: 1rem;
+      margin: 10px 0 5px;
+    }
+    .product-card p {
+      font-size: 0.9rem;
+      color: #666;
+      margin: 0;
+    }
+    .product-card .price {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .full-width-image {
+      height: 300px;
+      background: #bbb;
+      margin: 60px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: #333;
+    }
+    footer {
+      background: #111;
+      color: white;
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      font-size: 0.9rem;
+    }
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    footer ul li {
+      margin-bottom: 10px;
+    }
+    footer h4 {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">[ CATEGORY HERO IMAGE PLACEHOLDER ]</div>
+  <div class="section">
+    <h2>Featured Picks</h2>
+    <div class="product-grid">
+    
+      <!-- 12 products (4 per row x 3 rows) -->
+      <div class="product-card">
+        <img src="placeholder.jpg" alt="Product">
+        <h4>Product 1</h4>
+        <p>NEW</p>
+        <p class="price">$1,790.00</p>
+      </div>
+      <div class="product-card">
+        <img src="placeholder.jpg" alt="Product">
+        <h4>Product 2</h4>
+        <p>NEW</p>
+        <p class="price">$2,199.00</p>
+      </div>
+      <div class="product-card">
+        <img src="placeholder.jpg" alt="Product">
+        <h4>Product 3</h4>
+        <p>NEW</p>
+        <p class="price">$1,225.00</p>
+      </div>
+      <div class="product-card">
+        <img src="placeholder.jpg" alt="Product">
+        <h4>Product 4</h4>
+        <p>NEW</p>
+        <p class="price">$3,400.00</p>
+      </div>
+      </div>
+    </div>
+    <h2>Best Sellers</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="placeholder.jpg" alt="Product">
+        <h4>Product 5</h4>
+        <p>NEW</p>
+        <p class="price">$4,120.00</p>
+      </div>
+      <div class="product-card">
+        <img src="placeholder.jpg" alt="Product">
+        <h4>Product 6</h4>
+        <p>NEW</p>
+        <p class="price">$2,875.00</p>
+      </div>
+      <div class="product-card">
+        <img src="placeholder.jpg" alt="Product">
+        <h4>Product 7</h4>
+        <p>NEW</p>
+        <p class="price">$1,490.00</p>
+      </div>
+      <div class="product-card">
+        <img src="placeholder.jpg" alt="Product">
+        <h4>Product 8</h4>
+        <p>NEW</p>
+        <p class="price">$3,199.00</p>
+      </div>
+      </div>
+    </div>
+    <h2>New Arrivals</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="placeholder.jpg" alt="Product">
+        <h4>Product 9</h4>
+        <p>NEW</p>
+        <p class="price">$1,950.00</p>
+      </div>
+      <div class="product-card">
+        <img src="placeholder.jpg" alt="Product">
+        <h4>Product 10</h4>
+        <p>NEW</p>
+        <p class="price">$3,500.00</p>
+      </div>
+      <div class="product-card">
+        <img src="placeholder.jpg" alt="Product">
+        <h4>Product 11</h4>
+        <p>NEW</p>
+        <p class="price">$4,600.00</p>
+      </div>
+      <div class="product-card">
+        <img src="placeholder.jpg" alt="Product">
+        <h4>Product 12</h4>
+        <p>NEW</p>
+        <p class="price">$3,999.00</p>
+      </div>
+    </div>
+  </div>
+<div class="full-width-image">
+    <img src="full-width-placeholder.jpg" alt="Full Width Image" style="width: 100%; height: 100%; object-fit: cover;">
+  </div>
+  <footer>
+    <div>
+      <h4>Customer Service</h4>
+      <ul>
+        <li>Contact Us</li>
+        <li>FAQs</li>
+        <li>Order Tracking</li>
+        <li>Returns</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li>About Us</li>
+        <li>Careers</li>
+        <li>Newsroom</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li>Privacy Policy</li>
+        <li>Terms of Service</li>
+        <li>Cookies</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <ul>
+        <li>Instagram</li>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>Newsletter</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

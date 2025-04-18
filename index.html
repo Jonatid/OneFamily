@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Family Marketplace</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fff;
+      color: #111;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ccc;
+      background: white;
+    }
+
+    .nav-left, .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-size: 0.95rem;
+    }
+
+    .nav-center {
+      font-size: 1.6rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .nav-icon {
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    .menu-toggle {
+      position: relative;
+    }
+
+    .menu-dropdown {
+      display: none;
+      position: absolute;
+      top: 120%;
+      left: 0;
+      background-color: white;
+      border: 1px solid #ccc;
+      min-width: 160px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    .menu-dropdown a {
+      display: block;
+      padding: 10px 15px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .menu-dropdown a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .menu-toggle:hover .menu-dropdown {
+      display: block;
+    }
+
+    .hero {
+      height: 80vh;
+      background: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .box {
+      height: 200px;
+      background: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #555;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .box:hover {
+      background: #ddd;
+    }
+
+    .image-banner {
+      height: 60vh;
+      background: #bbb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: #444;
+      margin: 60px 0;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      font-size: 0.9rem;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    footer ul li {
+      margin-bottom: 10px;
+    }
+
+    footer h4 {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-left">
+      <div class="menu-toggle">
+        <span class="nav-icon">☰</span>
+        <div class="menu-dropdown">
+          <a href="#">Category 1</a>
+          <a href="#">Category 2</a>
+          <a href="#">Category 3</a>
+          <a href="#">Category 4</a>
+          <a href="#">Category 5</a>
+          <a href="#">Category 6</a>
+          <a href="#">Category 7</a>
+          <a href="#">Category 8</a>
+        </div>
+      </div>
+      <span>Menu</span>
+      <span class="nav-icon">🔍</span>
+      <span>Search</span>
+    </div>
+
+    <div class="nav-center">ONE FAMILY MARKETPLACE</div>
+
+    <div class="nav-right">
+      <a href="#" style="text-decoration: none; color: #000;">Contact Us</a>
+      <span class="nav-icon">♡</span>
+      <span class="nav-icon">👤</span>
+      <span class="nav-icon">🛍️<sup style="font-size: 0.7rem;">0</sup></span>
+    </div>
+  </nav>
+
+  <div class="hero">[ HERO IMAGE PLACEHOLDER ]</div>
+
+  <div class="section">
+    <h2>Shop by Category</h2>
+    <div class="grid">
+      <div class="box">Category 1</div>
+      <div class="box">Category 2</div>
+      <div class="box">Category 3</div>
+      <div class="box">Category 4</div>
+      <div class="box">Category 5</div>
+      <div class="box">Category 6</div>
+      <div class="box">Category 7</div>
+      <div class="box">Category 8</div>
+    </div>
+  </div>
+
+  <div class="image-banner">[ IMAGE BANNER PLACEHOLDER ]</div>
+
+  <div class="section">
+    <h2>Featured</h2>
+    <div class="grid">
+      <div class="box">Feature 1</div>
+      <div class="box">Feature 2</div>
+      <div class="box">Feature 3</div>
+      <div class="box">Feature 4</div>
+    </div>
+  </div>
+
+  <div class="image-banner">[ IMAGE BANNER PLACEHOLDER ]</div>
+
+  <div class="section">
+    <h2>Products that Need Support</h2>
+    <div class="grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="box">Support Product 1</div>
+      <div class="box">Support Product 2</div>
+      <div class="box">Support Product 3</div>
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <h4>Customer Service</h4>
+      <ul>
+        <li>Contact Us</li>
+        <li>FAQs</li>
+        <li>Order Tracking</li>
+        <li>Returns</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li>About Us</li>
+        <li>Careers</li>
+        <li>Newsroom</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li>Privacy Policy</li>
+        <li>Terms of Service</li>
+        <li>Cookies</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <ul>
+        <li>Instagram</li>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>Newsletter</li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
