@@ -91,6 +91,36 @@
   </style>
 </head>
 <body>
+  <nav style="display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; border-bottom: 1px solid #ccc; background: white; flex-wrap: nowrap;">
+  <div style="display: flex; align-items: center; gap: 15px; font-size: 0.95rem;">
+    <div style="position: relative;">
+      <span id="menu-toggle" style="font-size: 1.1rem; cursor: pointer;">☰</span>
+      <div id="menu-dropdown" style="display: none; position: absolute; top: 30px; left: 0; background: white; border: 1px solid #ccc; box-shadow: 0 4px 6px rgba(0,0,0,0.1); z-index: 1000;">
+        <a href="categorypage.html" style="display: block; padding: 10px 20px; text-decoration: none; color: #000;">Shop by Category</a>
+        <a href="ProductPage.html" style="display: block; padding: 10px 20px; text-decoration: none; color: #000;">Product View</a>
+        <a href="#" style="display: block; padding: 10px 20px; text-decoration: none; color: #000;">Category 3</a>
+        <a href="#" style="display: block; padding: 10px 20px; text-decoration: none; color: #000;">Category 4</a>
+        <a href="#" style="display: block; padding: 10px 20px; text-decoration: none; color: #000;">Category 5</a>
+        <a href="#" style="display: block; padding: 10px 20px; text-decoration: none; color: #000;">Category 6</a>
+        <a href="#" style="display: block; padding: 10px 20px; text-decoration: none; color: #000;">Category 7</a>
+        <a href="#" style="display: block; padding: 10px 20px; text-decoration: none; color: #000;">Category 8</a>
+      </div>
+    </div>
+    <span>Menu</span>
+    <span style="font-size: 1.1rem;">🔍</span>
+    <span>Search</span>
+  </div>
+
+  <div style="font-size: 1.6rem; font-weight: bold; letter-spacing: 2px; white-space: nowrap;">ONE FAMILY MARKETPLACE</div>
+
+  <div style="display: flex; align-items: center; gap: 15px; font-size: 0.95rem;">
+    <a href="#" style="text-decoration: none; color: #000;">Contact Us</a>
+    <span style="font-size: 1.1rem;">♡</span>
+    <span style="font-size: 1.1rem;">👤</span>
+    <span style="font-size: 1.1rem;">🛍️<sup style="font-size: 0.7rem;">0</sup></span>
+  </div>
+</nav>
+
   <div class="product-container">
     <div class="product-image">
       <img src="https://via.placeholder.com/700x800.png?text=Full+Product+Image" alt="Full Product Image" style="width: 100%; height: auto; object-fit: contain;">
@@ -142,5 +172,25 @@
       </div>
     </div>
   </div>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("menu-toggle");
+    const dropdown = document.getElementById("menu-dropdown");
+
+    toggle.addEventListener("click", function (e) {
+      e.stopPropagation();
+      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    });
+
+    document.addEventListener("click", function () {
+      dropdown.style.display = "none";
+    });
+
+    dropdown.addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+  });
+</script>
+
 </body>
 </html>
