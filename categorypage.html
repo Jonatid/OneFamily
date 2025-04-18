@@ -94,6 +94,45 @@
   </style>
 </head>
 <body>
+  <nav style="display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; border-bottom: 1px solid #ccc; background: white;">
+    <div style="display: flex; align-items: center; gap: 15px; font-size: 0.95rem;">
+      <div class="dropdown" style="position: relative;">
+        <span id="menu-toggle" style="font-size: 1.1rem; cursor: pointer;">☰</span>
+        <div id="menu-dropdown" style="display: none; position: absolute; top: 30px; left: 0; background: white; border: 1px solid #ccc; box-shadow: 0 4px 6px rgba(0,0,0,0.1); z-index: 1000;">
+  <a href="categorypage.html" style="display: block; padding: 10px 20px; color: #000; text-decoration: none;">Shop by Category</a>
+  <a href="ProductPage.html" style="display: block; padding: 10px 20px; color: #000; text-decoration: none;">Product View</a>
+  <a href="#" style="display: block; padding: 10px 20px; color: #000; text-decoration: none;">Category 3</a>
+  <a href="#" style="display: block; padding: 10px 20px; color: #000; text-decoration: none;">Category 4</a>
+  <a href="#" style="display: block; padding: 10px 20px; color: #000; text-decoration: none;">Category 5</a>
+  <a href="#" style="display: block; padding: 10px 20px; color: #000; text-decoration: none;">Category 6</a>
+  <a href="#" style="display: block; padding: 10px 20px; color: #000; text-decoration: none;">Category 7</a>
+  <a href="#" style="display: block; padding: 10px 20px; color: #000; text-decoration: none;">Category 8</a>
+</div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const toggle = document.getElementById("menu-toggle");
+          const dropdown = document.getElementById("menu-dropdown");
+          toggle.addEventListener("click", function () {
+            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+          });
+        });
+          menuDropdown.addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+  </script>
+      <span>Menu</span>
+      <span style="font-size: 1.1rem; cursor: pointer;">🔍</span>
+      <span>Search</span>
+    </div>
+    <div style="font-size: 1.6rem; font-weight: bold; letter-spacing: 2px;">ONE FAMILY MARKETPLACE</div>
+    <div style="display: flex; align-items: center; gap: 15px; font-size: 0.95rem;">
+      <a href="#" style="text-decoration: none; color: #000;">Contact Us</a>
+      <span style="font-size: 1.1rem; cursor: pointer;">♡</span>
+      <span style="font-size: 1.1rem; cursor: pointer;">👤</span>
+      <span style="font-size: 1.1rem; cursor: pointer;">🛍️<sup style="font-size: 0.7rem;">0</sup></span>
+    </div>
+  </nav>
   <div class="hero">[ CATEGORY HERO IMAGE PLACEHOLDER ]</div>
   <div class="section">
     <h2>Featured Picks</h2>
